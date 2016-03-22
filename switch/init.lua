@@ -8,6 +8,6 @@ wifi.sta.config("SSID","PASSWD")
  print("ESP8266 mode is: " .. wifi.getmode())
  print("The module MAC address is: " .. wifi.ap.getmac())
  print("Config done, IP is "..wifi.sta.getip())
- dofile ("domoticz.lua")
+ dofile ("switch.lua")
  end
  end)
