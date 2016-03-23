@@ -12,6 +12,16 @@ This file is assumed from the page <a href="https://www.domoticz.com/wiki/ESP826
 This is file with code of youre switch. There are two important variables:
 <ul>
 <li><code>pin </code> - Which on of pins is connect to the relay, led or etc.
-<li><code>status</code> - Switch is on or off
+<li><code>status</code> - Boolean variable, which has mean whether switch is on or off
 </ul>
+<h3>Flashing this files to the Nodemcu</h3>
+<p>For flashing this files to the Nodemcu, you need the <a href="https://github.com/themadinventor/esptool">esptool software</a>. If you have it installed, you can flash the files as:</p>
+<code>
+sudo path/to/esptool.py --port /dev/ttyUSB0 write_flash 0x00000 path/to/init.lua
+</code>
+<p>and then the same for the switch.lua. After upload both of the files, you can check its function with screen:</p>
+<code>
+screen /dev/ttyUSB0 115200
+</code>
+<p>To watch all from star, the best idea is press the reset button on Nodemcu now</p>
 
