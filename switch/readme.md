@@ -15,13 +15,13 @@ This is file with code of youre switch. There are two important variables:
 <li><code>status</code> - Boolean variable, which has mean whether switch is on or off
 </ul>
 <h3>Flashing this files to the Nodemcu</h3>
-<p>For flashing this files to the Nodemcu, you need the <a href="https://github.com/themadinventor/esptool">esptool software</a>. If you have it installed, you can flash the files as:</p>
+<p>For flashing this files to the Nodemcu, you need the <a href="https://github.com/4refr0nt/luatool">luatool software</a>. If you have it installed, you can flash the files as:</p>
 <code>
-sudo path/to/esptool.py --port /dev/ttyUSB0 write_flash 0x00000 path/to/init.lua
+sudo python path/to/luatool/luatool.py --port /dev/ttyUSB0 --src /path/to/init.lua --dest init.lua --verbose
 </code>
 <p>and then the same for the switch.lua. After upload both of the files, you can check its function with screen:</p>
 <code>
-screen /dev/ttyUSB0 115200
+screen /dev/ttyUSB0 9600
 </code>
-<p>To watch all from star, the best idea is press the reset button on Nodemcu now</p>
+<p>To watch all from start, the best idea is press the reset button on Nodemcu now. If you have any problem try unplug and plug USB cabel again.</p>
 
