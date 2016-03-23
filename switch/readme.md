@@ -5,6 +5,7 @@ This folder describes how to create the bulb switch with Nodemcu
 <ul>
 <li> init.lua - setting the WiFi
 <li> switch.lua - main file with code
+<li> script_device_nodemcu.lua - this script will be placed on Domoticz server
 </ul>
 <h3>init.lua</h3>
 <p>This file is assumed from the page <a href="https://www.domoticz.com/wiki/ESP8266_WiFi_module">ESP8266 Wifi Module</a> at the Domoticz web pages. You have to change here SSID an password of youre WiFi. On the end is calling file switch.lua with your programme. If you would like to change name switch.lua you have to change it here too.</p>
@@ -24,5 +25,8 @@ sudo python path/to/luatool/luatool.py --port /dev/ttyUSB0 --src /path/to/init.l
 <code>
 screen /dev/ttyUSB0 9600
 </code>
-<p>To watch all from start, the best idea is press the reset button on Nodemcu now. If you have any problem try unplug and plug USB cabel again.</p>
-
+<p>To watch all from start, the best idea is press the reset button on Nodemcu now. If you have any problem try unplug and plug USB cabel again. Remember the IP adres, which is shown</p>
+<h3>Preparing Domoticz server</h3>
+<p>On the Domoticz server go to the list of devices and select any virtual device (if you haven't any yet, you have to some prepare). Create new virtual sensor, select type as a switch. Give it name e.g. "nodemcu".</p>
+<p>Now you have to insert file script_device_nodemcu.lua into server with domoticz. Place it in folder domoticz into scripts/lua. You have to change IP address of Nodemcu and name of the switch</p>
+<p>If everything is correct, switch can function now</p>
