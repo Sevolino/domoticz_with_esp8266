@@ -5,5 +5,7 @@
 <h2>Preparing the nodemcu.</h2>
 <p>You have two files here:</p>
 <ul>
-<li>
+<li>init.lua - Script with initial setting
+<li>domoticz.lua - Script which reads temperature from lm35 and send it to the server.
 </ul>
+<p>In the script <code>init.lua</code> you have to change SSID and Password for your WiFi network</p>
