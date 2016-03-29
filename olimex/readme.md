@@ -10,4 +10,5 @@ I recommend to use the version 1.6.5 of the Arduino IDE</a></p>
 <li>Change SSID and password for your WiFi
 <li>Change Pin from 2 to 5. (The relay on the Olimex board is connected as the GPIO pin 5)
 </ul>
-<p>After the correct upload of the code, you have to detect IP address of the EVB</p>
+<p>After the correct upload of the code, you have to detect IP address of the EVB.</p>
+<p>Then you can check the function of the relay by the connecting to this IP address.</p>
