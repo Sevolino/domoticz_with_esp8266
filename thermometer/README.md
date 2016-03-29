@@ -14,3 +14,4 @@
 <li>Set up the correct IP address of Domoticz server. If you change the default port 8080 on Domoticz, you have to change it here also.
 <li>Change IDX to the value which you have writed.
 </ul>
+<p>Maybe you have to change the formula for the computing of temerature according to your sensor. You have to check its datasheet. For LM35dz which is used here it is <code>t = r * 285 / 1024</code></p>.
