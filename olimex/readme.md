@@ -13,4 +13,5 @@ I recommend to use the version 1.6.5 of the Arduino IDE</a></p>
 <p>After the correct upload of the code, you have to detect IP address of the EVB.
 Then you can check the function of the relay by the connecting to this IP address.</p>
 <h2>Preparing Domoticz</h2>
-<p>On the Domoticz server you have to create new switch in the virtual dummy device. Give it any name, e.g. "Relay Olimex", set the type as "On/Off" and change the icon to the "Light switch". Then set up the field "On action" as <code>http://ip.switch/LED=ON</code> and the field "Off action" as <code>http://ip.switch/LED=OFF</code>. You change <code>ip.switch</code> to the real ip of your switch.</p>
+<p>On the Domoticz server you have to create new switch in the virtual dummy device. Give it any name, e.g. "Relay Olimex", set the type as "On/Off" and change the icon to the "Light switch". Then set up the field "On action" as <code>http://ip.switch/LED=ON</code> and the field "Off action" as <code>http://ip.switch/LED=OFF</code>. You have to change <code>ip.switch</code> to the real ip of your switch.</p>
+<p>It is all. You can use it now.</p>
