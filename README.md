@@ -4,8 +4,9 @@
 
 <h1>Using Esp8266 (Olimex and Nodemcu) as end elements for home automation system Domoticz</h1>
 
-There are two subdirectories
+There are three subdirectories
 <ul>
-<li>switch - describes creating switch of the bulb by the using of Nodemcu
-<li>thermometer - creating thermo sensor by the using Nodemcu and lm35dz
+<li>switch - it is described creating the switch by the using of Nodemcu
+<li>thermometer - it is described creating the thermo sensor by the using Nodemcu and lm35dz
+<li>olimex - it is described using the Olimex EVB8266 as a relay with the Domoticz
 </ul>
