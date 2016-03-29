@@ -17,5 +17,5 @@
 <p>Maybe you have to change the formula for the computing of temerature according to your sensor. You have to check its datasheet. For LM35dz which is used here it is <code>t = r * 285 / 1024</code></p>.
 <h2>Connecting sensor LM35dz to the Nodemcu</h2>
 <p>It is recommended connect the sensor to the unplugged Nodemcu. The LM35dz sensor has three pins. You have to find its function in the datasheet. <a href="http://www.4tronix.co.uk/arduino/pictures/lm35_02a.jpg">Picture</a> is here. Now you have to connect "-" to the GND pin and "+" to the Vin pin on the Nodemcu. You have to use the Vin pin and not the 3V3 because the current 5V is needed for LM35dz sensor. And connect data pin to the A0 pin on the nodemcu. Beware of the mismatch of the + and -, you can destroy the sensor.</p>
-<h2>Ending</p>
+<h2>Ending</h2>
 <p>It is time to the plug on Nodemcu with attached sensor now. On the domoticz server open the web page with this sensor. After a while you can watch the real temperature here.</p>
