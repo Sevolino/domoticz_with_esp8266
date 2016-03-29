@@ -1,4 +1,4 @@
-<h1>Using Esp8266 (Olimex and Nodemcu) as end elements for home automation system Domoticz</h1>
+<h1>Using Esp8266 (Olimex and Nodemcu) as end element for home automation system Domoticz</h1>
 
 There are three subdirectories
 <ul>
