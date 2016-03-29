@@ -8,4 +8,9 @@
 <li>init.lua - Script with initial setting
 <li>domoticz.lua - Script which reads temperature from lm35 and send it to the server.
 </ul>
-<p>In the script <code>init.lua</code> you have to change SSID and Password for your WiFi network</p>
+<p>In the script <code>init.lua</code> you have to change SSID and Password to your WiFi network real values.</p>
+<p>In the script <code>domoticz.lua</code> you have to change minimal two things:</p>
+<ul>
+<li>Set up the correct IP address of Domoticz server. If you change the default port 8080 on Domoticz, you have to change it here also.
+<li>Change IDX to the value which you have writed.
+</ul>
