@@ -17,6 +17,7 @@ This folder describes how to create the switch with the Nodemcu
 </ul>
 <p>You can set the correct PIN on the Nodemcu from <a href="http://www.cnx-software.com/2015/04/18/nodemcu-is-both-a-breadboard-friendly-esp8266-wi-fi-board-and-a-lua-based-firmware/">this page</a></p>
 <h3>Flashing this files to the Nodemcu</h3>
+<h4>Linux and OS X</h4>
 <p>For flashing this files to the Nodemcu, you need the <a href="https://github.com/4refr0nt/luatool">luatool software</a>. If you have it installed, you can flash the files as:</p>
 <code>
 sudo python path/to/luatool/luatool.py --port /dev/ttyUSB0 --src /path/to/init.lua --dest init.lua --verbose
@@ -26,6 +27,8 @@ sudo python path/to/luatool/luatool.py --port /dev/ttyUSB0 --src /path/to/init.l
 screen /dev/ttyUSB0 9600
 </code>
 <p>The best idea to check all from start is pressing the reset button on Nodemcu now. If you have any problem try unplug and plug USB cabel again. Remember the IP adres, which is shown</p>
+<Windows>
+<p>You can use <a href="http://benlo.com/esp8266/">LuaLOader</a> for uploading both of the files.
 <h3>Preparing Domoticz server</h3>
 <p>On the Domoticz server go to the list of devices and select any virtual device (if you haven't any yet, you have to prepare any). You have to create new virtual sensor, then you select its type as a switch. Give it name e.g. "nodemcu".</p>
 <p>Now you have to upload file script_device_nodemcu.lua into server with domoticz. You have to put it in folder domoticz into the subfolder <code>scripts/lua</code>. You have to change IP address of Nodemcu and name of the switch.</p>
