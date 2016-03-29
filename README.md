@@ -3,6 +3,6 @@
 There are three subdirectories
 <ul>
 <li>switch - it is described creating the switch by the using of Nodemcu
-<li>thermometer - it is described creating the thermo sensor by the using Nodemcu and lm35dz
+<li>thermometer - it is described creating the temperature sensor by the using Nodemcu and lm35dz
 <li>olimex - it is described using the Olimex EVB8266 as a relay with the Domoticz
 </ul>
